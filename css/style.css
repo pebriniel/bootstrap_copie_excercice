@@ -1,0 +1,457 @@
+ 
+body{ font-family: "PT Sans",sans-serif; }
+h1, h2, h3, h4, h5{ font-family: Merriweather; font-weight: 300; }
+ul{padding: 0;}
+
+a{ text-decoration: none; }
+a:hover{ text-decoration: none; color: white; cursor: pointer; } /* cursor: pointer utile pour le boutton qui permet de remonter le scroll !!! */
+
+section{ width: 100%; }
+figure img{ width: 100%; padding: 0px; margin: 0px;}
+
+article .img{ position: relative; }
+.light-block{ background-color: #edf4f8; }
+.blue-block{ background-color: #003c5a; }
+
+button, .custom-btn{ 
+	border-radius: 300px; 
+	border: 0px;
+	height: 50px; 
+	width: 244px;
+	background-color: #fc8f44;
+	transition: 1s;
+	font-size: 15px;
+	padding: 15px 55px 17px;
+	font-weight: 700;
+	color: white;
+	margin-top: 1.1em;
+}
+
+button:hover, .custom-btn:hover{ background: #f9a870; }
+
+/* -----------------
+*  		JAVASCRIPT 
+   ----------------- */
+
+.btn-scroll{ 
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: -60px;
+	right: 40px;
+	font-size: 24px;
+	border-radius: 50%;
+	background-color: #fc8f44;
+	text-align: center;
+	line-height: 56px;
+	color: white;
+	z-index: 200;
+	transition: 0.5s;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.12), 3px 4px 8px 0px rgba(0, 0, 0, 0.11);
+}
+
+.btn-scroll-show{ bottom: 30px; }
+
+
+header{ background: #003c5a; height: 11em;}
+.btn-header { padding-top: 55px; }
+header .titre-header{ color: white; font-size: 2em; font-weight: 700; font-family: Merriweather; line-height: 2.3em;}
+header ul{ color: #2379a3;  }
+header h2{ font-size: 1.3em; text-align: right; }
+header h2 a{ color: white; }
+
+
+.menu-fixed{
+	padding-top: 0px;
+	position: fixed; 
+	z-index: 300;
+	width: 100%;
+	height: 63px;
+	background: #003c5a;
+	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-fixed li{ padding-left: 4%; padding-right: 4%; }
+
+ul li .active{ color: white; }
+
+.btn-top-header{ margin-top: 30px; }
+
+header ul { padding-left: 0px;  text-align: center; }
+nav li{ display: inline-block; margin-top: 20px; padding-left: 2%; padding-right: 2%;}
+nav a { padding: 34.5px 10px 30.5px; color: #2379a3; transition: 1s; }
+nav a:hover{ color: #ebebeb; text-decoration: none; }
+#burger{ transition: 0.1s; cursor: pointer; }
+.burger, .tel { margin-top: 10px; display: none; }
+.icon-down { transform: rotate(90deg); }
+
+.studiant{ padding-top: 10vh;  }
+
+.studiant h3{
+	line-height: 2em;
+	font-size: 2.8em;
+}
+
+.studiant h4{
+	font-size: 2.3em;
+	margin-top: 1em;
+	color: #555555
+}
+
+.studiant article{ z-index: 50; }
+.studiant p{ color: #7D7D7D; margin-top: 3.5em; font-size: 1.1em; width: 80%; line-height: 1.7em; }
+.studiant a{ margin-top: 3.5em; display: block; }
+.studiant figure img{ bottom: 0;  }
+.studiant figure{ height: 100vh;}
+
+#main-header h2{ font-size: 3.5em; margin-top: 2.5em; }
+#main-header h3{ font-size: 1.2em; color: #2379a3; }
+
+#main-header{
+	background: url('img/page01_img01.png') #003c5a;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	color: white;	
+	min-height: 113vh;
+}
+
+#information { min-height: 135vh; padding-top: 10vh; padding-bottom: 10vh; }
+#information span{ 
+	font-size: 60px;
+	color: orange; 
+	display: block;
+	height: 115px;
+}
+
+#information article{ color: #7D7D7D; margin-top: 3em; }
+#information p{ font-size: 16px; width: 100%; padding: 0; margin: 0; }
+#information h3{ font-size: 2.8em; margin-top: 1.2em; }
+#information h4{
+	color: #555555;
+	font-weight: 400;
+	font-size: 1.5em;
+	line-height: 1.45;
+}
+
+#information article div{ padding-left: 3em; }
+
+#information .space-top{
+}
+
+#book{
+	font-size: 16px;
+	color: #7D7D7D;
+	
+	padding-top: 16vh;
+
+}
+
+#book article h3{
+	font-size: 2.5em;
+	line-height: 1.55em;
+	color: black;
+}
+
+#book article h4{
+	font-size: 2em;
+	line-height: 1.31em;
+	color: black;
+	padding-top: 20px;
+	color: #555555
+}
+
+#book article .text{
+	display: block;
+	font-size: 1em;
+	margin-top: 40px;
+}
+#book figure {
+		padding-bottom: 16vh;
+		height:80vh;
+		
+		
+}
+
+/* email */
+#email { padding-top: 15vh; padding-bottom: 15vh; color: #66B8E0; font-size: 18px; }
+#email h3{ font-size: 2em; color: white; padding-bottom: 8px;}
+#email input, #email buton{ margin-top: 3%; }
+#email input{ border-radius: 300px; text-indent: 15px; width: 30%; padding: 0.7%; border: 0px; }
+#email .button-left{ margin-left: 2%; }
+#email p{ font-size: 1em; }
+
+#carrousel{ background-color: #e76e33; color: white; height: 90vh; padding-top: 14vh; padding-bottom: 14vh; }
+#carrousel h3{ font-size: 3em; }
+#carrousel article{ background-color: #e76e33; }
+#myCarousel{ margin-top: 30px; height: 255px; }
+#myCarousel ol li{ background-color: #f38b59; border: none; }
+#myCarousel ol .active{ background-color: white; }
+img{ margin-left: auto; margin-right: auto; }
+#myCarousel q{ 
+	font: 300 italic 18px/40px "Merriweather", serif; 
+	font-size: 1.5em; 
+	letter-spacing: -0.1px; 
+	
+	display: block; 
+	width: 90%; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 20px; 
+}
+#myCarousel q:before, q:after{ content: ''; }
+#myCarousel .auteur{ font-weight: 700; font-size: 1.2em; line-height: 2.35; }
+#myCarousel ol{ bottom: -70px; }
+
+footer{ padding-bottom: 20px; background-color: #272727; color: white; }
+footer .copyright{ font-size: 13px; color: #7D7D7D; margin-top: 30px; }
+footer a{ color: #7d7d7d; }
+footer p a{ color: white; }
+footer li{ display: inline-block; font-size: 15px; transition: .5s all ease; }
+footer li span:hover{ color: #fc8f44; transition: .5s all ease; }
+footer .btn-rs{ padding-top: 20px; }
+
+hr{
+	height: 1px;
+	border: none;
+	color: #3f3935;
+	background: #3f3935;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+
+
+
+
+/* ----------------- TROLOLOLOLO --------------------- */
+#popup { 
+	display: none;
+	background-color: rgba(15, 15, 15, 0.3); 
+	position: fixed; 
+	width: 3000px; 
+	height: 100%; 
+	z-index: 1000; 
+	color: white;
+	font-size: 2.5em;
+}
+#popup .window{
+	position: fixed; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	min-height: auto;
+	padding: 30px auto;
+	
+	z-index: 500;
+	background-color: rgba(30, 30, 30, 0.6); 
+	text-align: center;	
+}
+
+
+#popup .window nav{ 
+	top: 0; 
+	width: 100%;
+	padding: 5px;
+	background-color: rgba(30, 30, 30, 0.1);
+	font-size: 2em;
+	text-align: right;
+	right: 5px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#popup nav span{ 
+	display: block; 
+	width: 50px;
+	height: 50px;
+	
+	line-height: 50px;
+	text-align: center;
+	
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+}
+
+/* ----------------- MEDIA QUERIIIIES ----------------- */
+
+@media screen and (max-width: 1199px) {
+	#menu-header{ padding: 0px; margin: 0px; padding-top: 0px; }
+	header .titre-header{ text-align: center; display: block; margin: 0; padding: 0; line-height: 2.5em; }
+	#menu-header h2{ display: none; }
+	#menu-header .tel{ display: block; float: right; right: 1em; font-size: 2em; color: #003c5a; background-color: white; padding: 0.5px; margin-top: 0.4em; width: 40px; border-radius: 50%; }
+	#menu-header ul{ width: 100%; }
+	#menu-header li{ display: inline-block; }
+	#menu-header li a{ text-align: left; }
+	#menu-header .hide-element{ display: none; }
+	
+	.studiant{ padding-bottom: 14vh; }
+	.studiant article{ margin-left: auto; margin-right: auto; }
+	.studiant figure img{ position: relative; }
+	
+	#book article h3{font-size:2em;	}
+	#book article h4{font-size:1.5em;	}
+	#book figure img{height:100%;	}
+
+	#email input{
+		margin-left:10%;
+		width:60%;
+		margin-right:10%;
+	}
+	#email button{
+	margin-top:2em;
+	}
+}
+@media screen and (max-width: 985px) {
+	header{ padding: 0; height: auto; }
+	header .btn-header{ padding-top: 0px; }
+	#menu-header li{ width: 100%; display: block;  }
+	#menu-header .hide-element{ display: block; }
+	#menu-header .titre-header{ font-size: 1.5em; }
+	
+	.burger{ display: block; color: white; font-size: 1.8em; }
+	header nav{ 
+		display: none;
+		position: relative;
+		width: 250px;  
+		color: #2379a3;
+		top: 100%;
+		background: #003c5a;
+		left: -550px;
+		transition: 0.5s;
+		z-index: 250;
+		height: 100%;
+	} /* left: -550px;*/
+	
+	article, p{ text-align: center; }
+	
+	#main-header{ min-height: 58vh; }
+	#main-header h2{ font-size: 2.5em; line-height: 1.3em; margin-top: 0.7em; }
+	#main-header h3{ font-size: 1em; color: #66B8E0; }
+	
+	#information{ padding-top: 2.8vh; padding-bottom: 2.8vh; }
+	#information h3{ font-size: 2.3em; line-height: 1.3em; }
+	#information span { height: 70px; }
+	#information p{ line-height: 1.3em; }
+
+	
+	footer nav ul{ padding-top: 20px; }
+	footer nav li{
+		display: block; 
+		padding-top: 12px;
+		margin: 0px;
+	}
+	
+	
+	#carrousel h3{ font-size: 2em; }
+	#myCarousel{ margin-top: 30px; }
+	#myCarousel q{ 
+		font: 300 italic 18px/40px "Merriweather", serif; 
+		font-size: 1.2em; 
+	}
+	#myCarousel q:before, q:after{ content: ''; }
+	#myCarousel .auteur{ font-weight: 700; font-size: 1.2em; line-height: 2.35; }
+	#myCarousel ol{ bottom: -70px; }
+	
+	#book article:nth-child(2){ padding-left: 0; }
+	#book article h3{ font-size: 1.8em; }
+	#book article h4{ font-size: 1.2em; }
+	.studiant{ padding-top: 5vh; padding-bottom: 5vh; }
+	.studiant article{ text-align: center; }
+	.studiant h3{ font-size: 2.3em; padding-top: 0em; }
+	.studiant h4{ font-size: 1.5em; padding-top: 0.5em; }
+	.studiant p{ width: 100%; }
+	.studiant a{ margin-left: auto; margin-right: auto; margin-bottom: 3%; margin-top: 1.5em; }
+	.studiant figure{ left: 0; margin-top: 5%; }
+
+	#email h3{ font-size: 1.3em; }
+	#email p{ font-size: 0.8em; width: 70%; margin-left: auto; margin-right: auto; }
+	#email input{ border-radius: 300px; text-indent: 15px; width: 90%; padding: 2%; border: 0px; }
+	
+	footer li a{ padding: 0; padding: 0px; }	
+	.showMenu{ 
+		left: 0px; display: block; 
+			
+	}	
+	header h2 a{ display: none; }
+	
+	
+	header li, header li a, .active{ display: block; padding: 0px;}
+}
+
+
+
+/* ----------------- LES FONT ----------------- */
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?94537168');
+  src: url('../fonts/fontello.eot?94537168#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?94537168') format('woff2'),
+       url('../fonts/fontello.woff?94537168') format('woff'),
+       url('../fonts/fontello.ttf?94537168') format('truetype'),
+       url('../fonts/fontello.svg?94537168#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?94537168#fontello') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-briefcase:before { content: '\e801'; } /* '' */
+.icon-graduation-cap:before { content: '\e802'; } /* '' */
+.icon-globe-alt-outline:before { content: '\e803'; } /* '' */
+.icon-book-open:before { content: '\e804'; } /* '' */
+.icon-picture-outline:before { content: '\e805'; } /* '' */
+.icon-twitter:before { content: '\e806'; } /* '' */
+.icon-globe:before { content: '\e807'; } /* '' */
+.icon-down:before { content: '\e808'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-instagram:before { content: '\f31e'; } /* '' */
